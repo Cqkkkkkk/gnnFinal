@@ -1,0 +1,15 @@
+__pycache__/
+datasets
+ckpts
+tmp
+.vscode
+configs/search
+search-results
+gen_param_search.py
+param_search_clean.sh
+param_search.sh
+tmp.py
+configs/ablation
+configs/parameter-analysis
+configs/tmp.yaml
+plots

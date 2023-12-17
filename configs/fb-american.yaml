@@ -1,0 +1,26 @@
+repeat: 3
+seed: 116014
+dataset:
+  name: fb-american
+  tgt_type: person
+  split: random
+optim:
+  epochs: 100
+  lr: 7.5e-4
+  wd: 4e-6
+model:
+  mp_hop: 2
+  lp_hop: 3
+  hidden_dim: 256
+  dropout: 0.5
+  input_dropout: 0.5
+  attention_dropout: 0.0
+  num_attention_heads: 1
+  n_fp_layers: 3
+  residual: True
+  label_prop: True
+  selective: False
+  task:
+    layers: 3
+  l2_norm: True
+  alpha: 0.6

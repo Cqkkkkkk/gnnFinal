@@ -1,0 +1,24 @@
+repeat: 3
+dataset:
+  name: imdb
+  tgt_type: movie
+  split: random
+optim:
+  epochs: 100
+  lr: 1e-3
+  wd: 0.0
+model:
+  mp_hop: 4
+  lp_hop: 4
+  hidden_dim: 256
+  dropout: 0.5
+  input_dropout: 0.5
+  attention_dropout: 0.0
+  num_attention_heads: 1
+  n_fp_layers: 3
+  residual: True
+  label_prop: True
+  selective: False
+  task:
+    layers: 4
+    init_last_layer: False

@@ -1,0 +1,25 @@
+repeat: 3
+dataset:
+  name: dblp
+  tgt_type: author
+  split: random
+optim:
+  epochs: 100
+  lr: 7.5e-4
+  wd: 0.0
+  eval_protocol: 'loss'
+model:
+  hidden_dim: 256
+  dropout: 0.5
+  input_dropout: 0.5
+  attention_dropout: 0.0
+  alpha: 0.8
+  num_attention_heads: 1
+  n_fp_layers: 2
+  residual: True
+  label_prop: True
+  selective: False
+  task:
+    layers: 3
+  l2_norm: True
+ 

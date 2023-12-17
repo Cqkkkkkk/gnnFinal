@@ -1,0 +1,31 @@
+repeat: 3
+seed: 42
+dataset:
+  name: ogb-mag
+  tgt_type: paper
+  split: random
+optim:
+  epochs: 100
+  lr: 1e-3
+  wd: 0.0
+  batch_size: 8192
+  amp: True
+model:
+  mp_hop: 2
+  lp_hop: 2
+  hidden_dim: 512
+  dropout: 0.5
+  input_dropout: 0.1
+  attention_dropout: 0.0
+  label_dropout: 0.0
+  num_attention_heads: 1
+  activation: 'leaky_relu'
+  n_fp_layers: 2
+  n_residual_layers: 4
+  residual: True
+  label_prop: False
+  selective: False
+  task:
+    layers: 2
+  l2_norm: True
+ 
