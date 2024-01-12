@@ -92,7 +92,7 @@ class SelectiveHeteroMLP(nn.Module):
 
 class LinearPerMetapath(nn.Module):
     '''
-        Linear projection per metapath for feature projection in SeHGNN.
+        Linear projection per metapath for feature projection.
     '''
 
     def __init__(self, in_dim, out_dim, num_metapaths, dropout=0.5):
